@@ -1,0 +1,31 @@
+name: code-review-env
+version: "1.0.0"
+description: Smart Code Review Environment for AI agents
+author: Mohammad Muzakkir Ahmed
+environment:
+  type: text
+  language: python
+  tasks:
+    - id: task1
+      name: Syntax Bug Detection
+      difficulty: easy
+    - id: task2
+      name: Security Vulnerability Detection
+      difficulty: medium
+    - id: task3
+      name: Code Quality Review
+      difficulty: hard
+api:
+  reset: POST /reset
+  step: POST /step
+  state: GET /state
+  tasks: GET /tasks
+  grader: GET /grader
+  baseline: POST /baseline
+  health: GET /health
+reward:
+  min: 0.0
+  max: 1.0
+  type: continuous
+docker:
+  port: 7860
