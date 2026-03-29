@@ -1,1 +1,1 @@
-"""Tasks Package"""
+"""Tasks"""
