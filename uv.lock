@@ -1,0 +1,13 @@
+version = 1
+requires-python = ">=3.10"
+
+[[package]]
+name = "code-review-env"
+version = "1.0.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "fastapi" },
+    { name = "uvicorn" },
+    { name = "pydantic" },
+    { name = "openenv-core" },
+]
